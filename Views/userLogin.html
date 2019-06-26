@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color:lightblue;
+            }
+            div.header{
+                text-align: center;
+                color: red;
+            }
+            img.image{
+                width:70px;
+                height:70px;
+            }
+            div.content{
+                border: 5px solid yellowgreen;
+                border-radius: 15px 50px 30px 15px ;
+                width: fit-content;
+                height:fit-content;
+                margin:0rem;
+                background-color: yellowgreen;
+            }
+            div.content1{
+                border: 5px solid yellowgreen;
+                border-radius: 15px 15px 15px 15px ;
+                height: 20rem;
+                width: fit-content;
+                margin:0rem;
+                background-color: yellowgreen;
+            }
+            form.divLoginForm{
+                height:fit-content;
+                width:15rem;
+                text-align: center;
+            }
+            form.divSignForm{
+                height:fit-content;
+                width:20rem;
+                text-align: center;
+            }
+            button.formContent,
+            input.formContent{
+                font-size:small;
+            }
+        </style>
+
+
+    </head>
+    <title>
+        care your memories
+    </title>
+
+    <body>
+        <div class="header">
+            <img class="image" src="http://localhost:3000/images/icon.png">
+            <h1>PIN your memories</h1>
+        </div>
+        <div style="display: flex">
+        <div class="content" >
+            <form class="divLoginForm" method="POST" action="/userAuth">
+                <h2 class="formContent" style="color: white">Login</h2>
+                <input class="formContent" type="text" name="Username" placeholder="Username"><br>
+                <input class="formContent" style="margin-top: 0.5rem" type="password" name="Password" placeholder="Password"><br>
+                <button class="formContent" style="margin-top: 0.5rem" type="button">Submit</button>
+            </form>
+        </div>
+        <div class="content1" style="margin-left: 15rem">
+            <h1 style="font-family:serif">SignUp Form
+            <form class="divSignForm" method="POST" action="/userSignup">
+                <input class="formContent" style="margin-top: 0.5rem" type="text" name="fName" placeholder="First Name">
+                <input class="formContent" style="margin-top: 0.5rem" type="text" name="lName" placeholder="Last Name"><br>
+                <input class="formContent" style="margin-top: 0.5rem" type="text" name="mail" placeholder="Email Address"><br>
+                <input class="formContent" style="margin-top: 0.5rem" type="text" name="contact" placeholder="Contact Number"><br>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "login-module",
+  "version": "1.0.0",
+  "description": "this module contains login setup only",
+  "main": "app.js",
+  "scripts": {
+    "test": "scripts.test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheraOnGit/loginModule.git"
+  },
+  "author": "shera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheraOnGit/loginModule/issues"
+  },
+  "homepage": "https://github.com/sheraOnGit/loginModule#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
