@@ -7,4 +7,7 @@ router.get('/userPortal/login',(req,res,next)=>{
     res.sendFile(path.join(__dirname,'../','Views','userLogin.html'));
 });
 
+router.get('/userPortal/dashboard',(req,res,next)=>{
+    res.sendFile(path.join(__dirname,'../','Views','dashboard.html'));
+});
 module.exports=router;

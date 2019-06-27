@@ -2,7 +2,11 @@
 <html>
 <head>
 <style>
-
+.head{
+    background-color:darkolivegreen;
+    height:auto;
+    dispaly:inline
+}
 .card{    
 	border:0px solid black;
     max-width:40%;
@@ -24,48 +28,59 @@
     word-wrap: break-word;
     padding: 2px 16px;
 }
+.headbtn{
+	background-color: darkolivegreen;
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+.flow{
+    display: inline;
+}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,5);
+}
+.headbtn:hover{
+	background-color: rgb(106, 133, 59);
 }
 </style>
 </head>
 <body>
-<div>
-  <div class="card">
-      <h4 class="header"><i>Best Wishes to</i></h4>
-      <div class="container">
-          <h4>Ravi</h4>
-          <h4>Wishing Date:17/02/2020</h4>
-          <h4>Email:ravishekhar5588@gmail.com</h4>
-      </div>
-  </div>
-
-  <div class="card">
-      <h4 class="header"><i>Best Wishes to</i></h4>
-      <div class="container">
-          <h4>Ravi</h4>
-          <h4>Wishing Date:17/02/2020</h4>
-          <h4>Email:ravishekhar5588@gmail.com</h4>
-      </div>
-  </div>
-  <div class="card">
-      <h4 class="header"><i>Best Wishes to</i></h4>
-      <div class="container">
-          <h4>Ravi</h4>
-          <h4>Wishing Date:17/02/2020</h4>
-          <h4>Email:ravishekhar5588@gmail.com</h4>
-      </div>
-  </div>
-  <div class="card">
-      <h4 class="header"><i>Best Wishes to</i></h4>
-      <div class="container">
-          <h4>Ravi</h4>
-          <h4>Wishing Date:17/02/2020</h4>
-          <h4>Email:ravishekhar5588@gmail.com</h4>
-      </div>
-  </div>
+<!--HEADER divison of the page-->
+<div class="head">
+    <form class="flow">
+        <button class="headbtn" type="submit" formaction="/userPortal/login">Home</button>
+        <button class="headbtn" type="submit" formaction="/userPortal/login">About Us</button>
+    </form>
 </div>
 
+<!--CARD divison of the page-->
+<div style="margin-top: 20px;">
+    <div class="card">
+        <h4 class="header"><i>Best Wishes to</i></h4>
+        <div class="container">
+            <h4>Ravi</h4>
+            <h4>Wishing Date:17/02/2020</h4>
+            <h4>Email:ravishekhar5588@gmail.com</h4>
+        </div>
+    </div>
+
+    <div class="card">
+        <h4 class="header"><i>Best Wishes to</i></h4>
+        <div class="container">
+            <h4>Ravi</h4>
+            <h4>Wishing Date:17/02/2020</h4>
+            <h4>Email:ravishekhar5588@gmail.com</h4>
+        </div>
+    </div>
+</div>
+<!--Footer divison of the page-->
 
 </body>
 </html>
