@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-
-
 var userSchema = mongoose.Schema;
 var userDataSchema = new userSchema({
     name:{
@@ -12,7 +10,8 @@ var userDataSchema = new userSchema({
     email_id:{type:String,required:true,unique:true},
     contactNo:{type:String,required:true},
     DOB:{type:Date},
-    gender:{type:String}
+    gender:{type:String},
+    password:{type:String,required:true}
 });
 
-module.exports = mongoose.model('userLog',userDataSchema);
+module.exports = mongoose.model('userInfo',userDataSchema);
